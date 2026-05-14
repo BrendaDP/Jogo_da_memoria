@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1e0f228060c2ff56fbf9779335b0cef6
+guid: 425c4ca2527935c79abbbbf940c8f499
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1068399613720683656
-    second: Question Mark (1)_0
-  - first:
-      213: -2650215043051712572
-    second: Question Mark (1)_1
+      213: -204826849672236093
+    second: Home Page_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Question Mark (1)_0
+      name: Home Page_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 21
-        width: 39
-        height: 39
+        x: 6
+        y: 9
+        width: 68
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87b930246384c21f0800000000000000
-      internalID: -1068399613720683656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Question Mark (1)_1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 5
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4cf8184b57b883bd0800000000000000
-      internalID: -2650215043051712572
+      spriteID: 3c3f2d0c01f482df0800000000000000
+      internalID: -204826849672236093
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Question Mark (1)_0: -1068399613720683656
-      Question Mark (1)_1: -2650215043051712572
+      Home Page_0: -204826849672236093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
