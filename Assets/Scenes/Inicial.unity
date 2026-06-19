@@ -181,7 +181,7 @@ MonoBehaviour:
   m_text: "MEM\xD3RIA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1354,7 +1354,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_text: CONQUISTAS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1750,7 +1750,7 @@ MonoBehaviour:
   m_text: TUTORIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_text: DA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_text: JOGAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2509,7 +2509,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Configura\xE7\xF5es (azul)"
+          m_StringArgument: Configuracoes (azul)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2032216667

@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_text: "PARAB\xC9NS!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
-  m_sharedMaterial: {fileID: -7682640706046335175, guid: aebae395aaf0465469458356d736f4c7, type: 2}
+  m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1263,8 +1263,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 72
