@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/In\xEDcial.unity"
+    path: Assets/Scenes/Inicial.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Certeza de sair.unity
+    guid: f73531d9b44010751afea164ac3bfb71
+  - enabled: 1
+    path: Assets/Scenes/Temas.unity
+    guid: 3f25ecbff4b14c6b688b0779e64608c8
+  - enabled: 1
+    path: Assets/Scenes/Tente novamnte.unity
+    guid: 64b47662e637a8e4b99dddb388d600a9
+  - enabled: 1
+    path: "Assets/Scenes/Parab\xE9ns.unity"
+    guid: 23815bfdb55b34d918123011c40179a5
+  - enabled: 1
+    path: "Assets/Scenes/Configura\xE7\xF5es (verde).unity"
+    guid: 60a8581209621627093ff893158db4c3
+  - enabled: 1
+    path: "Assets/Scenes/Configura\xE7\xF5es (azul).unity"
+    guid: d506243f368f2d8b29b746bfad1aca0b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
