@@ -33,10 +33,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Informacoes.unity
     guid: 11ad72579ec6f20128a0583d5f14b96e
   - enabled: 1
-    path: Assets/Scenes/EncontreosParesErro.unity
+    path: Assets/Scenes/EncontreParesErro1.unity
     guid: 058707a87da1267f8b4a458baad9293a
   - enabled: 1
-    path: Assets/Scenes/EncontreosParesErro2.unity
+    path: Assets/Scenes/EncontreParesErro.unity
     guid: 4e050ab2f6c63b96fb310fd799533602
   - enabled: 1
     path: Assets/Scenes/EncontrePares1.unity
