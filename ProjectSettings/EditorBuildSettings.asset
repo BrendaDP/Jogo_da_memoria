@@ -39,8 +39,20 @@ EditorBuildSettings:
     path: Assets/Scenes/EncontreParesErro.unity
     guid: 4e050ab2f6c63b96fb310fd799533602
   - enabled: 1
-    path: Assets/Scenes/EncontrePares1.unity
+    path: Assets/Scenes/Animais_Nivel/Animais_Nivel1.unity
     guid: 96dfc8b293d3306c4811988e8597b8a6
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Animais_Nivel2.unity
+    guid: d6dd70317e133b047b9a04aca994304c
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Animais_Nivel3.unity
+    guid: 39aff5b6a21409d4b8d4b33c98a24eab
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Animais_Nivel4.unity
+    guid: 5525dcfd41429834d8f213cf81b21f92
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Animais_Nivel5.unity
+    guid: 9142366b223454540a48345aef7792e8
   - enabled: 1
     path: Assets/Scenes/EncontrePares2.unity
     guid: 13ec5515d4324526683e7438d58ef751
