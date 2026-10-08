@@ -6,8 +6,12 @@ using TMPro;
 public class JogoMemoria : MonoBehaviour
 {
     public TMP_Text temporizador;
+
     private static float tempo = 0f;
+    private float tempoInicial = 0f;
+
     public static float tempoFinal = 0f;
+
     private static Carta primeiraCarta;
     private static Carta segundaCarta;
 
@@ -15,13 +19,28 @@ public class JogoMemoria : MonoBehaviour
 
 
     // ==========================================
-    // SORTEAR AS POSIÇÕES DAS CARTAS
+    // INICIAR JOGO
     // ==========================================
 
     private void Start()
     {
+        tempoInicial = Time.realtimeSinceStartup;
         tempo = 0f;
-        temporizador.text = "Tempo: 00:00";
+
+        if (temporizador != null)
+        {
+            temporizador.text = "0:00";
+        }
+
+        // Limpa as cartas anteriores
+        primeiraCarta = null;
+        segundaCarta = null;
+        bloqueado = false;
+
+
+        // ==========================================
+        // SORTEAR AS POSIÇÕES DAS CARTAS
+        // ==========================================
 
         Carta[] cartas = FindObjectsByType<Carta>(FindObjectsSortMode.None);
 
@@ -59,30 +78,40 @@ public class JogoMemoria : MonoBehaviour
 
     private void Update()
     {
-        tempo += Time.deltaTime;
+        if (temporizador == null)
+            return;
+
+        // Usa tempo real
+        tempo = Time.realtimeSinceStartup - tempoInicial;
 
         int minutos = Mathf.FloorToInt(tempo / 60f);
         int segundos = Mathf.FloorToInt(tempo % 60f);
 
-        temporizador.text = string.Format("Tempo: {0:00}:{1:00}", minutos, segundos);
+        temporizador.text = string.Format("{0}:{1:00}", minutos, segundos);
     }
 
 
     // ==========================================
-    // VERIFICAÇÃO DAS CARTAS
+    // CARTA FOI VIRADA
     // ==========================================
 
     public static void CartaVirada(Carta carta)
     {
+        if (bloqueado)
+            return;
+
         if (primeiraCarta == null)
         {
             // Primeira carta
             primeiraCarta = carta;
         }
-        else if (segundaCarta == null)
+        else if (segundaCarta == null && carta != primeiraCarta)
         {
             // Segunda carta
             segundaCarta = carta;
+
+            // Bloqueia novos cliques
+            bloqueado = true;
 
             // Verifica o par
             VerificarPar();
@@ -90,22 +119,29 @@ public class JogoMemoria : MonoBehaviour
     }
 
 
+    // ==========================================
+    // VERIFICAR PAR
+    // ==========================================
+
     private static void VerificarPar()
     {
-        if (primeiraCarta.GetNomeAnimal() == segundaCarta.GetNomeAnimal())
+        string nomePrimeira = primeiraCarta.GetNomeAnimal().Trim();
+        string nomeSegunda = segundaCarta.GetNomeAnimal().Trim();
+
+        Debug.Log("Carta 1: " + nomePrimeira);
+        Debug.Log("Carta 2: " + nomeSegunda);
+
+        if (nomePrimeira == nomeSegunda)
         {
             // É um par
-            Debug.Log("Par encontrado: " + primeiraCarta.GetNomeAnimal());
+            Debug.Log("Par encontrado: " + nomePrimeira);
 
-            // Espera 2 segundos antes de fazer as cartas desaparecerem
             primeiraCarta.StartCoroutine(SumirPar());
         }
         else
         {
             // Não é par
             Debug.Log("Não é par!");
-
-            bloqueado = true;
 
             primeiraCarta.StartCoroutine(DesvirarCartas());
         }
@@ -118,7 +154,6 @@ public class JogoMemoria : MonoBehaviour
 
     private static IEnumerator SumirPar()
     {
-        // Espera 2 segundos
         yield return new WaitForSeconds(2f);
 
         // Faz as duas cartas desaparecerem
@@ -129,6 +164,8 @@ public class JogoMemoria : MonoBehaviour
         primeiraCarta = null;
         segundaCarta = null;
 
+        // Libera o jogo
+        bloqueado = false;
 
         // Verifica se encontrou todos os pares
         VerificarFimDeJogo();
@@ -141,7 +178,6 @@ public class JogoMemoria : MonoBehaviour
 
     private static IEnumerator DesvirarCartas()
     {
-        // Espera 3 segundos
         yield return new WaitForSeconds(2f);
 
         primeiraCarta.Desvirar();
@@ -151,6 +187,7 @@ public class JogoMemoria : MonoBehaviour
         primeiraCarta = null;
         segundaCarta = null;
 
+        // Libera o jogo
         bloqueado = false;
     }
 
@@ -178,8 +215,10 @@ public class JogoMemoria : MonoBehaviour
         {
             Debug.Log("Todos os pares encontrados!");
 
+            // Guarda o tempo que o jogador levou
             tempoFinal = tempo;
 
+            // Vai para a tela de parabéns
             SceneManager.LoadScene("Parabens");
         }
     }

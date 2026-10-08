@@ -21,41 +21,41 @@ public class Carta : MonoBehaviour
 
     public void Virar()
     {
-        // Não deixa virar se o jogo estiver bloqueando
+        // Não deixa clicar enquanto o jogo estiver verificando duas cartas
         if (JogoMemoria.bloqueado)
             return;
 
-        // Inverte o estado da carta
-        virada = !virada;
-
+        // Não deixa virar novamente uma carta que já está virada
         if (virada)
-        {
-            // Mostra o animal
-            imagemInterrogacao.SetActive(false);
-            imagemBicho.SetActive(true);
+            return;
 
-            // Mostra o nome
-            nomeAnimal.gameObject.SetActive(true);
+        virada = true;
 
-            // Coloca o animal na frente
-            imagemBicho.transform.SetAsLastSibling();
-            nomeAnimal.transform.SetAsLastSibling();
+        // Esconde o ?
+        imagemInterrogacao.SetActive(false);
 
-            // Avisa o jogo que uma carta foi virada
-            JogoMemoria.CartaVirada(this);
-        }
-        else
-        {
-            Desvirar();
-        }
+        // Mostra a imagem
+        imagemBicho.SetActive(true);
+
+        // Mostra o nome
+        nomeAnimal.gameObject.SetActive(true);
+
+        // Coloca a imagem e o nome na frente
+        imagemBicho.transform.SetAsLastSibling();
+        nomeAnimal.transform.SetAsLastSibling();
+
+        // Avisa o jogo que uma carta foi virada
+        JogoMemoria.CartaVirada(this);
     }
 
     public void Desvirar()
     {
         virada = false;
 
-        // Volta para o ?
+        // Mostra o ?
         imagemInterrogacao.SetActive(true);
+
+        // Esconde a imagem
         imagemBicho.SetActive(false);
 
         // Esconde o nome

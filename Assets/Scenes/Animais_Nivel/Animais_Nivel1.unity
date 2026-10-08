@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7102575}
   - component: {fileID: 7102574}
   m_Layer: 0
-  m_Name: caneta_0
+  m_Name: canguru_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 184299659}
   - component: {fileID: 184299658}
   m_Layer: 5
-  m_Name: relogio_text
+  m_Name: "le\xE3o_text"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "REL\xD3GIO"
+  m_text: "LE\xC3O"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 340111195}
   - component: {fileID: 340111194}
   m_Layer: 0
-  m_Name: relogio_0
+  m_Name: "le\xE3o_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5662783821573247211, guid: 0df69262665c5bd4cae4e601332f0cdb, type: 3}
+  m_Sprite: {fileID: -1628134788780967833, guid: 69d0b6dd873fa28f99b92b2081fc924d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1414,7 +1414,7 @@ GameObject:
   - component: {fileID: 880828996}
   - component: {fileID: 880828995}
   m_Layer: 5
-  m_Name: caneta_text
+  m_Name: canguru_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CANETA
+  m_text: 'CANGURU '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -2079,7 +2079,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3891269495536304776, guid: caf89fa1bdada0d9eaa2c1cb869a2506, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e26753125b705d08b35c506d2f8b024, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2098,8 +2098,8 @@ Transform:
   m_GameObject: {fileID: 1820777444}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -623.1, y: 300.1, z: -163.93246}
-  m_LocalScale: {x: 154.8251, y: 154.8251, z: 1.8214718}
+  m_LocalPosition: {x: -627.23, y: 306.5, z: -163.93246}
+  m_LocalScale: {x: 152.03825, y: 148.16763, z: 1.8214718}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1464054761}
@@ -2253,7 +2253,7 @@ GameObject:
   - component: {fileID: 1878901537}
   - component: {fileID: 1878901536}
   m_Layer: 0
-  m_Name: relogio_0
+  m_Name: "le\xE3o_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5662783821573247211, guid: 0df69262665c5bd4cae4e601332f0cdb, type: 3}
+  m_Sprite: {fileID: -1628134788780967833, guid: 69d0b6dd873fa28f99b92b2081fc924d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2328,7 +2328,7 @@ GameObject:
   - component: {fileID: 1995255438}
   - component: {fileID: 1995255437}
   m_Layer: 5
-  m_Name: caneta_text
+  m_Name: canguru_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,7 +2373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CANETA
+  m_text: CANGURU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -2465,7 +2465,7 @@ GameObject:
   - component: {fileID: 2040907182}
   - component: {fileID: 2040907181}
   m_Layer: 5
-  m_Name: relogio_text
+  m_Name: "le\xE3o_text"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2510,7 +2510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "REL\xD3GIO"
+  m_text: "LE\xC3O"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -2829,7 +2829,7 @@ GameObject:
   - component: {fileID: 2075882665}
   - component: {fileID: 2075882664}
   m_Layer: 0
-  m_Name: caneta_0
+  m_Name: canguru_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4319898219758209541, guid: c2fcb9621e1e62241b380e3be15dfd45, type: 3}
+  m_Sprite: {fileID: 7277026393196458172, guid: 041a41a2f21530afd8d38c75d5683bc3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2941,7 +2941,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4319898219758209541, guid: c2fcb9621e1e62241b380e3be15dfd45, type: 3}
+  m_Sprite: {fileID: 7277026393196458172, guid: 041a41a2f21530afd8d38c75d5683bc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
