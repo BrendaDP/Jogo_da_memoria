@@ -36,6 +36,15 @@ EditorBuildSettings:
     path: Assets/Scenes/EncontreParesErro1.unity
     guid: 058707a87da1267f8b4a458baad9293a
   - enabled: 1
+    path: Assets/Scenes/Niveis/Niveis_Animais.unity
+    guid: 33b56cd3e013026c68a535beafbec07b
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Niveis_Frutas.unity
+    guid: 4b85025a6e1453b4bb7e73bbc7ccc640
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Niveis_Objetos.unity
+    guid: 3a80ab02bdfb14841a78dd11364a45c4
+  - enabled: 1
     path: Assets/Scenes/EncontreParesErro.unity
     guid: 4e050ab2f6c63b96fb310fd799533602
   - enabled: 1
@@ -57,8 +66,11 @@ EditorBuildSettings:
     path: Assets/Scenes/EncontrePares2.unity
     guid: 13ec5515d4324526683e7438d58ef751
   - enabled: 1
-    path: Assets/Scenes/Niveis.unity
-    guid: 33b56cd3e013026c68a535beafbec07b
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel1.unity
+    guid: f01f9b9214cef90448824048597d09ec
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel1.unity
+    guid: 48bb1d123308d214faed09699cc57cb0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
