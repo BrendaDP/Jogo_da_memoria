@@ -1726,10 +1726,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1193922358}
-        m_TargetAssemblyTypeName: Trocarcena, Assembly-CSharp
-        m_MethodName: trocarcena
-        m_Mode: 5
+      - m_Target: {fileID: 1193922357}
+        m_TargetAssemblyTypeName: Carta, Assembly-CSharp
+        m_MethodName: Virar
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

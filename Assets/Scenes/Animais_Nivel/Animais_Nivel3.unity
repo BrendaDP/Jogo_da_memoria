@@ -1083,7 +1083,7 @@ GameObject:
   - component: {fileID: 398363532}
   - component: {fileID: 398363531}
   m_Layer: 5
-  m_Name: canguru_1 text
+  m_Name: coelho_1 text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CANGURU
+  m_text: COELHO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 462578922}
   - component: {fileID: 462578921}
   m_Layer: 0
-  m_Name: canguru_0
+  m_Name: coelho_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,7 +1311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7277026393196458172, guid: 041a41a2f21530afd8d38c75d5683bc3, type: 3}
+  m_Sprite: {fileID: 4923657074727427020, guid: a4e12a6d893c8934b9540c3c953c5d08, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1378,7 +1378,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7277026393196458172, guid: 041a41a2f21530afd8d38c75d5683bc3, type: 3}
+  m_Sprite: {fileID: 4923657074727427020, guid: a4e12a6d893c8934b9540c3c953c5d08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4616,7 +4616,7 @@ GameObject:
   - component: {fileID: 2120706648}
   - component: {fileID: 2120706647}
   m_Layer: 5
-  m_Name: cavalo_text
+  m_Name: coelho_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4661,7 +4661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CAVALO
+  m_text: COELHO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aebae395aaf0465469458356d736f4c7, type: 2}
   m_sharedMaterial: {fileID: -4617945262438094382, guid: aebae395aaf0465469458356d736f4c7, type: 2}
@@ -4754,7 +4754,7 @@ GameObject:
   - component: {fileID: 2135850439}
   - component: {fileID: 2135850438}
   m_Layer: 0
-  m_Name: cavalo_0
+  m_Name: coelho_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4799,7 +4799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1073052233881157960, guid: 3d827a87a8479c840b9ba2fd426f9a74, type: 3}
+  m_Sprite: {fileID: 4923657074727427020, guid: a4e12a6d893c8934b9540c3c953c5d08, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4866,7 +4866,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1073052233881157960, guid: 3d827a87a8479c840b9ba2fd426f9a74, type: 3}
+  m_Sprite: {fileID: 4923657074727427020, guid: a4e12a6d893c8934b9540c3c953c5d08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
