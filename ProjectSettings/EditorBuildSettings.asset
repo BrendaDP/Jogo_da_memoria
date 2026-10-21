@@ -48,6 +48,18 @@ EditorBuildSettings:
     path: Assets/Scenes/EncontreParesErro.unity
     guid: 4e050ab2f6c63b96fb310fd799533602
   - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Parabens_Animal1.unity
+    guid: 6d75f9ba973b14249a0a3eac44180833
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Parabens_Animal2.unity
+    guid: 426f5318c8bc81f48adbe99050ce3047
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Parabens_Animal3.unity
+    guid: f055aefd629f6be4085df9652f325cfe
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Parabens_Animal4.unity
+    guid: 0133a3e0ba3230843bc37bc2f63a0e24
+  - enabled: 1
     path: Assets/Scenes/Animais_Nivel/Animais_Nivel1.unity
     guid: 96dfc8b293d3306c4811988e8597b8a6
   - enabled: 1
