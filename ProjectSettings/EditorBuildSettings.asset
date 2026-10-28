@@ -83,6 +83,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel1.unity
     guid: 48bb1d123308d214faed09699cc57cb0
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/InfoFinal.unity
+    guid: df200ef9ffe767442a1ffe68e251b402
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

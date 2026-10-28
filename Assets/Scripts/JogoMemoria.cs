@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,8 @@ public class JogoMemoria : MonoBehaviour
     public TMP_Text temporizador;
 
     private static float tempo = 0f;
-    private float tempoInicial = 0f;
+    private static float tempoInicioRelogio = 0f;
+    private static bool temporizadorIniciado = false;
 
     public static float tempoFinal = 0f;
 
@@ -17,6 +19,8 @@ public class JogoMemoria : MonoBehaviour
 
     public static bool bloqueado = false;
 
+    private const string CHAVE_TEMPO = "TempoFinal_";
+
 
     // ==========================================
     // INICIAR JOGO
@@ -24,36 +28,42 @@ public class JogoMemoria : MonoBehaviour
 
     private void Start()
     {
-        tempoInicial = Time.realtimeSinceStartup;
         tempo = 0f;
+        tempoFinal = 0f;
+        tempoInicioRelogio = 0f;
+        temporizadorIniciado = false;
+
+        primeiraCarta = null;
+        segundaCarta = null;
+        bloqueado = false;
+
+        // Limpa o resultado anterior deste nível
+        string cenaAtual = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetFloat(CHAVE_TEMPO + cenaAtual, 0f);
+        PlayerPrefs.Save();
 
         if (temporizador != null)
         {
             temporizador.text = "0:00";
         }
 
-        // Limpa as cartas anteriores
-        primeiraCarta = null;
-        segundaCarta = null;
-        bloqueado = false;
 
-
-        // ==========================================
         // SORTEAR AS POSIÇÕES DAS CARTAS
-        // ==========================================
 
-        Carta[] cartas = FindObjectsByType<Carta>(FindObjectsSortMode.None);
+        Carta[] cartas = FindObjectsByType<Carta>(
+            FindObjectsSortMode.None
+        );
 
         Vector2[] posicoes = new Vector2[cartas.Length];
 
-        // Guarda as posições originais
         for (int i = 0; i < cartas.Length; i++)
         {
-            RectTransform rect = cartas[i].GetComponent<RectTransform>();
+            RectTransform rect =
+                cartas[i].GetComponent<RectTransform>();
+
             posicoes[i] = rect.anchoredPosition;
         }
 
-        // Embaralha as posições
         for (int i = 0; i < posicoes.Length; i++)
         {
             int aleatorio = Random.Range(i, posicoes.Length);
@@ -63,10 +73,11 @@ public class JogoMemoria : MonoBehaviour
             posicoes[aleatorio] = temp;
         }
 
-        // Coloca cada carta em uma posição sorteada
         for (int i = 0; i < cartas.Length; i++)
         {
-            RectTransform rect = cartas[i].GetComponent<RectTransform>();
+            RectTransform rect =
+                cartas[i].GetComponent<RectTransform>();
+
             rect.anchoredPosition = posicoes[i];
         }
     }
@@ -78,16 +89,27 @@ public class JogoMemoria : MonoBehaviour
 
     private void Update()
     {
+        if (!temporizadorIniciado)
+        {
+            if (temporizador != null)
+                temporizador.text = "0:00";
+
+            return;
+        }
+
+        tempo = Time.realtimeSinceStartup - tempoInicioRelogio;
+
         if (temporizador == null)
             return;
-
-        // Usa tempo real
-        tempo = Time.realtimeSinceStartup - tempoInicial;
 
         int minutos = Mathf.FloorToInt(tempo / 60f);
         int segundos = Mathf.FloorToInt(tempo % 60f);
 
-        temporizador.text = string.Format("{0}:{1:00}", minutos, segundos);
+        temporizador.text = string.Format(
+            "{0}:{1:00}",
+            minutos,
+            segundos
+        );
     }
 
 
@@ -97,23 +119,27 @@ public class JogoMemoria : MonoBehaviour
 
     public static void CartaVirada(Carta carta)
     {
-        if (bloqueado)
+        if (bloqueado || carta == null)
             return;
+
+        // Inicia o temporizador na primeira carta
+        if (!temporizadorIniciado)
+        {
+            tempoInicioRelogio = Time.realtimeSinceStartup;
+            temporizadorIniciado = true;
+
+            Debug.Log("Temporizador iniciado!");
+        }
 
         if (primeiraCarta == null)
         {
-            // Primeira carta
             primeiraCarta = carta;
         }
         else if (segundaCarta == null && carta != primeiraCarta)
         {
-            // Segunda carta
             segundaCarta = carta;
-
-            // Bloqueia novos cliques
             bloqueado = true;
 
-            // Verifica o par
             VerificarPar();
         }
     }
@@ -125,22 +151,26 @@ public class JogoMemoria : MonoBehaviour
 
     private static void VerificarPar()
     {
-        string nomePrimeira = primeiraCarta.GetNomeAnimal().Trim();
-        string nomeSegunda = segundaCarta.GetNomeAnimal().Trim();
+        if (primeiraCarta == null || segundaCarta == null)
+            return;
+
+        string nomePrimeira =
+            primeiraCarta.GetNomeAnimal().Trim();
+
+        string nomeSegunda =
+            segundaCarta.GetNomeAnimal().Trim();
 
         Debug.Log("Carta 1: " + nomePrimeira);
         Debug.Log("Carta 2: " + nomeSegunda);
 
         if (nomePrimeira == nomeSegunda)
         {
-            // É um par
             Debug.Log("Par encontrado: " + nomePrimeira);
 
             primeiraCarta.StartCoroutine(SumirPar());
         }
         else
         {
-            // Não é par
             Debug.Log("Não é par!");
 
             primeiraCarta.StartCoroutine(DesvirarCartas());
@@ -156,18 +186,17 @@ public class JogoMemoria : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        // Faz as duas cartas desaparecerem
-        primeiraCarta.gameObject.SetActive(false);
-        segundaCarta.gameObject.SetActive(false);
+        if (primeiraCarta != null)
+            primeiraCarta.gameObject.SetActive(false);
 
-        // Limpa as cartas
+        if (segundaCarta != null)
+            segundaCarta.gameObject.SetActive(false);
+
         primeiraCarta = null;
         segundaCarta = null;
 
-        // Libera o jogo
         bloqueado = false;
 
-        // Verifica se encontrou todos os pares
         VerificarFimDeJogo();
     }
 
@@ -180,14 +209,15 @@ public class JogoMemoria : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        primeiraCarta.Desvirar();
-        segundaCarta.Desvirar();
+        if (primeiraCarta != null)
+            primeiraCarta.Desvirar();
 
-        // Limpa as cartas
+        if (segundaCarta != null)
+            segundaCarta.Desvirar();
+
         primeiraCarta = null;
         segundaCarta = null;
 
-        // Libera o jogo
         bloqueado = false;
     }
 
@@ -198,7 +228,9 @@ public class JogoMemoria : MonoBehaviour
 
     private static void VerificarFimDeJogo()
     {
-        Carta[] cartas = FindObjectsByType<Carta>(FindObjectsSortMode.None);
+        Carta[] cartas = FindObjectsByType<Carta>(
+            FindObjectsSortMode.None
+        );
 
         bool terminou = true;
 
@@ -211,15 +243,72 @@ public class JogoMemoria : MonoBehaviour
             }
         }
 
-        if (terminou)
+        if (!terminou)
+            return;
+
+        Debug.Log("Todos os pares encontrados!");
+
+        // SALVA O TEMPO FINAL
+
+        if (temporizadorIniciado)
         {
-            Debug.Log("Todos os pares encontrados!");
+            tempoFinal =
+                Time.realtimeSinceStartup - tempoInicioRelogio;
+        }
+        else
+        {
+            tempoFinal = 0f;
+        }
 
-            // Guarda o tempo que o jogador levou
-            tempoFinal = tempo;
+        tempo = tempoFinal;
 
-            // Vai para a tela de parabéns
-            SceneManager.LoadScene("Parabens");
+        string cenaAtual = SceneManager.GetActiveScene().name;
+        string chaveTempo = CHAVE_TEMPO + cenaAtual;
+
+        PlayerPrefs.SetFloat(chaveTempo, tempoFinal);
+        PlayerPrefs.Save();
+
+        Debug.Log("Nível concluído: " + cenaAtual);
+        Debug.Log("Tempo final salvo: " + tempoFinal);
+        Debug.Log("Chave salva: " + chaveTempo);
+
+        // ESCOLHE A CENA DE PARABÉNS DO NÍVEL
+
+        string cenaParabens = "";
+
+        switch (cenaAtual)
+        {
+            case "Animais_Nivel1":
+                cenaParabens = "Parabens_Animal1";
+                break;
+
+            case "Animais_Nivel2":
+                cenaParabens = "Parabens_Animal2";
+                break;
+
+            case "Animais_Nivel3":
+                cenaParabens = "Parabens_Animal3";
+                break;
+
+            case "Animais_Nivel4":
+                cenaParabens = "Parabens_Animal4";
+                break;
+
+            case "Animais_Nivel5":
+                cenaParabens = "Parabens_Animal5";
+                break;
+        }
+
+        if (cenaParabens != "")
+        {
+            SceneManager.LoadScene(cenaParabens);
+        }
+        else
+        {
+            Debug.LogError(
+                "Não foi encontrada uma cena de parabéns para: "
+                + cenaAtual
+            );
         }
     }
 }
