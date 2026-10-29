@@ -78,6 +78,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EncontrePares2.unity
     guid: 13ec5515d4324526683e7438d58ef751
   - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/InfoFinal1.unity
+    guid: d6605a5fe8ffa1e4590171054310606a
+  - enabled: 1
     path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel1.unity
     guid: f01f9b9214cef90448824048597d09ec
   - enabled: 1
@@ -86,6 +89,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/InfoFinal.unity
     guid: df200ef9ffe767442a1ffe68e251b402
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/InfoFinal2.unity
+    guid: e78e3099c1117fa41ba4fd3b96a02f4e
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/InfoFinal3.unity
+    guid: 23f0bd453b5f3fb4fb77fb559b89a236
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/InfoFinal4.unity
+    guid: ad2fc650d26a8fd47be40aa0e641c11d
+  - enabled: 1
+    path: Assets/Scenes/Animais_Nivel/Parabens_Info.unity
+    guid: b674fe73ba32dd344a14047f65b68570
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

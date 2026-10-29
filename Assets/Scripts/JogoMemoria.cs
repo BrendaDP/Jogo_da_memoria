@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -37,48 +36,79 @@ public class JogoMemoria : MonoBehaviour
         segundaCarta = null;
         bloqueado = false;
 
-        // Limpa o resultado anterior deste nível
+        // Identifica a cena atual.
         string cenaAtual = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetFloat(CHAVE_TEMPO + cenaAtual, 0f);
-        PlayerPrefs.Save();
+
+        // Limpa o resultado anterior apenas nas fases do jogo.
+        if (
+            cenaAtual != "InfoFinal" &&
+            cenaAtual != "InfoFinal1" &&
+            cenaAtual != "InfoFinal2" &&
+            cenaAtual != "InfoFinal3" &&
+            cenaAtual != "InfoFinal4"
+        )
+        {
+            PlayerPrefs.SetFloat(CHAVE_TEMPO + cenaAtual, 0f);
+            PlayerPrefs.Save();
+        }
 
         if (temporizador != null)
         {
-            temporizador.text = "0:00";
+            temporizador.text = "TEMPO 00:00";
         }
 
 
+        // ==========================================
         // SORTEAR AS POSIÇÕES DAS CARTAS
+        // Nas cenas de informações, mantém as posições.
+        // ==========================================
 
-        Carta[] cartas = FindObjectsByType<Carta>(
-            FindObjectsSortMode.None
-        );
-
-        Vector2[] posicoes = new Vector2[cartas.Length];
-
-        for (int i = 0; i < cartas.Length; i++)
+        if (
+            cenaAtual != "InfoFinal" &&
+            cenaAtual != "InfoFinal1" &&
+            cenaAtual != "InfoFinal2" &&
+            cenaAtual != "InfoFinal3" &&
+            cenaAtual != "InfoFinal4"
+        )
         {
-            RectTransform rect =
-                cartas[i].GetComponent<RectTransform>();
+            Carta[] cartas = FindObjectsByType<Carta>(
+                FindObjectsSortMode.None
+            );
 
-            posicoes[i] = rect.anchoredPosition;
-        }
+            Vector2[] posicoes = new Vector2[cartas.Length];
 
-        for (int i = 0; i < posicoes.Length; i++)
-        {
-            int aleatorio = Random.Range(i, posicoes.Length);
+            for (int i = 0; i < cartas.Length; i++)
+            {
+                RectTransform rect =
+                    cartas[i].GetComponent<RectTransform>();
 
-            Vector2 temp = posicoes[i];
-            posicoes[i] = posicoes[aleatorio];
-            posicoes[aleatorio] = temp;
-        }
+                if (rect != null)
+                {
+                    posicoes[i] = rect.anchoredPosition;
+                }
+            }
 
-        for (int i = 0; i < cartas.Length; i++)
-        {
-            RectTransform rect =
-                cartas[i].GetComponent<RectTransform>();
+            // Embaralha as posições.
+            for (int i = 0; i < posicoes.Length; i++)
+            {
+                int aleatorio = Random.Range(i, posicoes.Length);
 
-            rect.anchoredPosition = posicoes[i];
+                Vector2 temp = posicoes[i];
+                posicoes[i] = posicoes[aleatorio];
+                posicoes[aleatorio] = temp;
+            }
+
+            // Aplica as posições sorteadas.
+            for (int i = 0; i < cartas.Length; i++)
+            {
+                RectTransform rect =
+                    cartas[i].GetComponent<RectTransform>();
+
+                if (rect != null)
+                {
+                    rect.anchoredPosition = posicoes[i];
+                }
+            }
         }
     }
 
@@ -92,7 +122,9 @@ public class JogoMemoria : MonoBehaviour
         if (!temporizadorIniciado)
         {
             if (temporizador != null)
-                temporizador.text = "0:00";
+            {
+                temporizador.text = "TEMPO 00:00";
+            }
 
             return;
         }
@@ -106,7 +138,7 @@ public class JogoMemoria : MonoBehaviour
         int segundos = Mathf.FloorToInt(tempo % 60f);
 
         temporizador.text = string.Format(
-            "{0}:{1:00}",
+            "TEMPO {0:00}:{1:00}",
             minutos,
             segundos
         );
@@ -122,7 +154,7 @@ public class JogoMemoria : MonoBehaviour
         if (bloqueado || carta == null)
             return;
 
-        // Inicia o temporizador na primeira carta
+        // Inicia o temporizador na primeira carta.
         if (!temporizadorIniciado)
         {
             tempoInicioRelogio = Time.realtimeSinceStartup;
@@ -248,7 +280,7 @@ public class JogoMemoria : MonoBehaviour
 
         Debug.Log("Todos os pares encontrados!");
 
-        // SALVA O TEMPO FINAL
+        // SALVA O TEMPO FINAL.
 
         if (temporizadorIniciado)
         {
@@ -272,7 +304,7 @@ public class JogoMemoria : MonoBehaviour
         Debug.Log("Tempo final salvo: " + tempoFinal);
         Debug.Log("Chave salva: " + chaveTempo);
 
-        // ESCOLHE A CENA DE PARABÉNS DO NÍVEL
+        // ESCOLHE A CENA DE PARABÉNS DO NÍVEL.
 
         string cenaParabens = "";
 
@@ -295,7 +327,7 @@ public class JogoMemoria : MonoBehaviour
                 break;
 
             case "Animais_Nivel5":
-                cenaParabens = "Parabens_Animal5";
+                cenaParabens = "Parabens_Info";
                 break;
         }
 
