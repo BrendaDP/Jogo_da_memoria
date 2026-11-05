@@ -54,6 +54,7 @@
     <Compile Include="Assets\Scripts\Trocarcena.cs" />
     <Compile Include="Assets\Scripts\MostrarTempoParabens.cs" />
     <Compile Include="Assets\Scripts\Carta.cs" />
+    <Compile Include="Assets\Scripts\ModalFrutas.cs" />
     <Compile Include="Assets\Scripts\Hello.cs" />
     <Compile Include="Assets\Scripts\JogoMemoria.cs" />
   </ItemGroup>
