@@ -26,8 +26,8 @@ public class ModalAnimal : MonoBehaviour
 public void AbrirLeao()
 {
     AbrirModal(
-        "Leão",
-        "O leão é conhecido como o rei da selva! Ele vive principalmente na África. Gosta de viver em grupos, e o macho tem uma juba ao redor da cabeça.",
+        "LEÃO",
+        "O LEÃO É CONHECIDO COMO O REI DA SELVA! ELE VIVE PRINCIPALMENTE NA ÁFRICA. GOSTA DE VIVER EM GRUPOS, E O MACHO TEM UMA JUBA AO REDOR DA CABEÇA.",
         leao
     );
 }
@@ -35,8 +35,8 @@ public void AbrirLeao()
 public void AbrirCanguru()
 {
     AbrirModal(
-        "Canguru",
-        "O canguru é um animal originário da Austrália! Ele tem pernas fortes e adora dar grandes saltos. A mamãe canguru carrega seu filhote em uma bolsinha na barriga.",
+        "CANGURU",
+        "O CANGURU É UM ANIMAL ORIGINÁRIO DA AUSTRÁLIA! ELE TEM PERNAS FORTES E ADORA DAR GRANDES SALTOS. A MAMÃE CANGURU CARREGA SEU FILHOTE EM UMA BOLSINHA NA BARRIGA.",
         canguru
     );
 }
@@ -44,8 +44,8 @@ public void AbrirCanguru()
 public void AbrirCavalo()
 {
     AbrirModal(
-        "Cavalo",
-        "O cavalo foi domesticado há milhares de anos na região da Eurásia. Ele gosta de comer capim e outras plantas, pode correr muito rápido e tem uma crina bonita. Seus filhotes são chamados de potros.",
+        "CAVALO",
+        "O CAVALO FOI DOMESTICADO HÁ MILHARES DE ANOS NA REGIÃO DA EURÁSIA. ELE GOSTA DE COMER CAPIM E OUTRAS PLANTAS, PODE CORRER MUITO RÁPIDO E TEM UMA CRINA BONITA. SEUS FILHOTES SÃO CHAMADOS DE POTROS.",
         cavalo
     );
 }
@@ -53,8 +53,8 @@ public void AbrirCavalo()
 public void AbrirCoelho()
 {
     AbrirModal(
-        "Coelho",
-        "O coelho europeu é originário da Península Ibérica, onde ficam países como Portugal e Espanha. Ele tem orelhas compridas, gosta de comer plantas e usa suas pernas fortes para dar pulinhos.",
+        "COELHO",
+        "O COELHO EUROPEU É ORIGINÁRIO DA PENÍNSULA IBÉRICA, ONDE FICAM PAÍSES COMO PORTUGAL E ESPANHA. ELE TEM ORELHAS COMPRIDAS, GOSTA DE COMER PLANTAS E USA SUAS PERNAS FORTES PARA DAR PULINHOS.",
         coelho
     );
 }
@@ -62,8 +62,8 @@ public void AbrirCoelho()
 public void AbrirGaviao()
 {
     AbrirModal(
-        "Gavião",
-        "O gavião é uma ave encontrada em várias partes do mundo, inclusive no Brasil! Ele voa alto, tem uma visão muito boa e usa suas garras fortes para capturar seu alimento.",
+        "GAVIÃO",
+        "O GAVIÃO É UMA AVE ENCONTRADA EM VÁRIAS PARTES DO MUNDO, INCLUSIVE NO BRASIL! ELE VOA ALTO, TEM UMA VISÃO MUITO BOA E USA SUAS GARRAS FORTE PARA CAPTURAR SEU ALIMENTO.",
         gaviao
     );
 }
@@ -71,8 +71,8 @@ public void AbrirGaviao()
 public void AbrirPeixe()
 {
     AbrirModal(
-        "Peixe",
-        "Os peixes vivem em rios, lagos e mares de todo o mundo, inclusive no Brasil! Eles usam as nadadeiras para nadar e as brânquias para respirar debaixo d'água. Existem peixes de muitas cores, tamanhos e formas diferentes.",
+        "PEIXE",
+        "OS PEIXES VIVEM EM RIOS, LAGOS E MARES DE TODO O MUNDO, INCLUSIVE NO BRASIL! ELES USAM AS NADADEIRAS PARA NADAR E AS BRÂNQUIAS PARA RESPIRAR DEBAIXO D'ÁGUA. EXISTEM PEIXES DE MUITAS CORES, TAMANHOS E FORMAS DIFERENTES.",
         peixe
     );
 }

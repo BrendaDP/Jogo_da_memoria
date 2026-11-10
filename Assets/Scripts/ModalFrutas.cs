@@ -27,8 +27,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirMaca()
     {
         AbrirModal(
-            "Maçã",
-            "A maçã é uma fruta muito gostosa! Ela pode ser vermelha, verde ou amarela. É crocante, docinha e cresce em árvores chamadas macieiras.",
+            "MAÇÃ",
+            "A MAÇÃ É UMA FRUTA MUITO GOSTOSA! ELA PODE SER VERMELHA, VERDE OU AMARELA. É CROCANTE, DOCINHA E CRESCE EM ÁRVORES CHAMADAS MACIEIRAS.",
             maca
         );
     }
@@ -36,8 +36,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirBanana()
     {
         AbrirModal(
-            "Banana",
-            "A banana é uma fruta muito popular! Ela cresce em cachos e tem uma casca que fica amarela quando está madura. É macia, docinha e fácil de descascar.",
+            "BANANA",
+            "A BANANA É UMA FRUTA MUITO POPULAR! ELA CRESCE EM CACHOS E TEM UMA CASCA QUE FICA AMARELA QUANDO ESTÁ MADURA. É MACIA, DOCINHA E FÁCIL DE DESCASCAR.",
             banana
         );
     }
@@ -45,8 +45,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirLaranja()
     {
         AbrirModal(
-            "Laranja",
-            "A laranja é uma fruta redondinha e cheia de suco! Sua casca geralmente é alaranjada e seu sabor pode ser doce ou azedinho. Ela também é muito usada para fazer sucos deliciosos.",
+            "LARANJA",
+            "A LARANJA É UMA FRUTA REDONDINHA E CHEIA DE SUCO! SUA CASCA GERALMENTE É ALARANJADA E SEU SABOR PODE SER DOCE OU AZEDINHO. ELA TAMBÉM É MUITO USADA PARA FAZER SUCOS DELICIOSOS.",
             laranja
         );
     }
@@ -54,8 +54,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirMamao()
     {
         AbrirModal(
-            "Mamão",
-            "O mamão é uma fruta macia e docinha! Por fora, sua casca pode ser verde ou amarelada. Por dentro, sua polpa costuma ser alaranjada e tem pequenas sementinhas pretas.",
+            "MAMÃO",
+            "O MAMÃO É UMA FRUTA MACIA E DOCINHA! POR FORA, SUA CASCA PODE SER VERDE OU AMARELADA. POR DENTRO, SUA POLPA COSTUMA SER ALARANJADA E TEM PEQUENAS SEMENTINHAS PRETAS.",
             mamao
         );
     }
@@ -63,8 +63,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirUva()
     {
         AbrirModal(
-            "Uva",
-            "A uva é uma frutinha pequena e redondinha que cresce em cachos. Pode ser verde, roxa ou vermelha. É suculenta e pode ser usada para fazer sucos e geleias.",
+            "UVA",
+            "A UVA É UMA FRUTINHA PEQUENA E REDONDINHA QUE CRESCe EM CACHOS. PODE SER VERDE, ROXA OU VERMELHA. É SUCULENTA E PODE SER USADA PARA FAZER SUCOS E GELEIAS.",
             uva
         );
     }
@@ -72,8 +72,8 @@ public class ModalFrutas : MonoBehaviour
     public void AbrirMelancia()
     {
         AbrirModal(
-            "Melancia",
-            "A melancia é uma fruta grande e muito refrescante! Por fora, sua casca é verde e, por dentro, sua polpa geralmente é vermelha e cheia de água. Ela é uma delícia nos dias quentes!",
+            "MELANCIA",
+            "A MELANCIA É UMA FRUTA GRANDE E MUITO REFRESCANTE! POR FORA, SUA CASCA É VERDE E, POR DENTRO, SUA POLPA GERALMENTE É VERMELHA E CHEIA DE ÁGUA. ELA É UMA DELÍCIA NOS DIAS QUENTES!",
             melancia
         );
     }
