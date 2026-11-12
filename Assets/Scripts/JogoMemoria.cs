@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -39,14 +40,11 @@ public class JogoMemoria : MonoBehaviour
         // Identifica a cena atual.
         string cenaAtual = SceneManager.GetActiveScene().name;
 
+        // Identifica as cenas de informações.
+        bool cenaDeInformacoes = cenaAtual.StartsWith("InfoFinal");
+
         // Limpa o resultado anterior apenas nas fases do jogo.
-        if (
-            cenaAtual != "InfoFinal" &&
-            cenaAtual != "InfoFinal1" &&
-            cenaAtual != "InfoFinal2" &&
-            cenaAtual != "InfoFinal3" &&
-            cenaAtual != "InfoFinal4"
-        )
+        if (!cenaDeInformacoes)
         {
             PlayerPrefs.SetFloat(CHAVE_TEMPO + cenaAtual, 0f);
             PlayerPrefs.Save();
@@ -63,13 +61,7 @@ public class JogoMemoria : MonoBehaviour
         // Nas cenas de informações, mantém as posições.
         // ==========================================
 
-        if (
-            cenaAtual != "InfoFinal" &&
-            cenaAtual != "InfoFinal1" &&
-            cenaAtual != "InfoFinal2" &&
-            cenaAtual != "InfoFinal3" &&
-            cenaAtual != "InfoFinal4"
-        )
+        if (!cenaDeInformacoes)
         {
             Carta[] cartas = FindObjectsByType<Carta>(
                 FindObjectsSortMode.None
