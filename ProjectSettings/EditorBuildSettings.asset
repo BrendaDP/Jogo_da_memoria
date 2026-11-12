@@ -84,6 +84,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel1.unity
     guid: f01f9b9214cef90448824048597d09ec
   - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel2.unity
+    guid: 80988778563163341b89878394144bf2
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel3.unity
+    guid: 3986bd4d9b7acad46870243819cbb758
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel4.unity
+    guid: 20ccb3d51cfafcc46b031295890375e2
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas1.unity
+    guid: 5c91c27022a43e4478ca4265b6de893a
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas2.unity
+    guid: 621692d179d4f3c41955f61c8475e432
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas3.unity
+    guid: d7e4ae0b9c3d13d4dac1f2f763500319
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas4.unity
+    guid: 5234f5981135d114e949ad81079b5910
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas.unity
+    guid: a4a33553134698c4e82627efe515febb
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel5.unity
+    guid: 15033426e2b1a1f459dc29042a6accba
+  - enabled: 1
     path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel1.unity
     guid: 48bb1d123308d214faed09699cc57cb0
   - enabled: 1
@@ -101,6 +128,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/Parabens_Info.unity
     guid: b674fe73ba32dd344a14047f65b68570
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas1.unity
+    guid: cd787b591d794e146ac28ba699e0de4b
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas2.unity
+    guid: a83dd8c2b92f03740a7ec4164150c35e
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas3.unity
+    guid: 23a926ee430bdc842bb987a48bdfcef7
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas4.unity
+    guid: b7c4cfdcd4af6d640bd85ddeb97970bd
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas_Info.unity
+    guid: b1f488c6c58692743b813c759d958453
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

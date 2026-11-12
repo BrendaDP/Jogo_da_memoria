@@ -302,6 +302,10 @@ public class JogoMemoria : MonoBehaviour
 
         switch (cenaAtual)
         {
+            // ======================================
+            // ANIMAIS
+            // ======================================
+
             case "Animais_Nivel1":
                 cenaParabens = "Parabens_Animal1";
                 break;
@@ -320,6 +324,27 @@ public class JogoMemoria : MonoBehaviour
 
             case "Animais_Nivel5":
                 cenaParabens = "Parabens_Info";
+                break;
+
+
+            // ======================================
+            // FRUTAS
+            // ======================================
+
+            case "Frutas_Nivel1":
+                cenaParabens = "Parabens_Frutas1";
+                break;
+
+            case "Frutas_Nivel2":
+                cenaParabens = "Parabens_Frutas2";
+                break;
+
+            case "Frutas_Nivel3":
+                cenaParabens = "Parabens_Frutas3";
+                break;
+
+            case "Frutas_Nivel4":
+                cenaParabens = "Parabens_Frutas4";
                 break;
         }
 
