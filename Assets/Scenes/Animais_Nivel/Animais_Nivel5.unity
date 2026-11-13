@@ -492,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 159336698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: -19.179, z: -10}
+  m_LocalPosition: {x: 150, y: -23, z: -10}
   m_LocalScale: {x: 0.72498, y: 0.68749, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -830,6 +830,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 7102572}
   imagemInterrogacao: {fileID: 2057896884}
   nomeAnimal: {fileID: 1995255437}
+  comecarViradaParaCima: 0
 --- !u!1 &260255417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1383,7 @@ Transform:
   m_GameObject: {fileID: 449276548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 211.94958, y: 62.88592, z: 0}
+  m_LocalPosition: {x: 334.8949, y: 59.20692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1944,6 +1945,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 2075882662}
   imagemInterrogacao: {fileID: 2105401298}
   nomeAnimal: {fileID: 880828995}
+  comecarViradaParaCima: 0
 --- !u!1 &711467442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,6 +2003,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 840894708}
   imagemInterrogacao: {fileID: 856127108}
   nomeAnimal: {fileID: 1172164557}
+  comecarViradaParaCima: 0
 --- !u!114 &711467445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,7 +2456,7 @@ Transform:
   m_GameObject: {fileID: 844726822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.945297, y: 2.6790009, z: 10.341}
+  m_LocalPosition: {x: 76, y: -1, z: 10.341}
   m_LocalScale: {x: 0.6416798, y: 0.6084974, z: 0.8851}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2897,6 +2900,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1878901534}
   imagemInterrogacao: {fileID: 807973095}
   nomeAnimal: {fileID: 184299658}
+  comecarViradaParaCima: 0
 --- !u!1 &974614994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +3811,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 340111192}
   imagemInterrogacao: {fileID: 733106260}
   nomeAnimal: {fileID: 2040907181}
+  comecarViradaParaCima: 0
 --- !u!1 &1243549035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,6 +3869,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 548161413}
   imagemInterrogacao: {fileID: 260255417}
   nomeAnimal: {fileID: 1436387997}
+  comecarViradaParaCima: 0
 --- !u!114 &1243549038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,6 +4096,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 291998502}
   imagemInterrogacao: {fileID: 898249220}
   nomeAnimal: {fileID: 1774890926}
+  comecarViradaParaCima: 0
 --- !u!114 &1334932716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4241,6 +4248,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 2135850436}
   imagemInterrogacao: {fileID: 1622671061}
   nomeAnimal: {fileID: 2120706647}
+  comecarViradaParaCima: 0
 --- !u!114 &1389258314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,6 +4400,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1139186286}
   imagemInterrogacao: {fileID: 974614994}
   nomeAnimal: {fileID: 2109574918}
+  comecarViradaParaCima: 0
 --- !u!114 &1409925092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,6 +4862,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 536386087}
   imagemInterrogacao: {fileID: 1277611612}
   nomeAnimal: {fileID: 1505369537}
+  comecarViradaParaCima: 0
 --- !u!114 &1547903820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5214,6 +5224,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 462578919}
   imagemInterrogacao: {fileID: 1150054422}
   nomeAnimal: {fileID: 398363531}
+  comecarViradaParaCima: 0
 --- !u!114 &1708251809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6638,6 +6649,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1586077334}
   imagemInterrogacao: {fileID: 980917585}
   nomeAnimal: {fileID: 1939477882}
+  comecarViradaParaCima: 0
 --- !u!114 &2114289869
 MonoBehaviour:
   m_ObjectHideFlags: 0
