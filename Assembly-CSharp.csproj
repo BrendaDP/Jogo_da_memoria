@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\Carta.cs" />
     <Compile Include="Assets\Scripts\ModalFrutas.cs" />
     <Compile Include="Assets\Scripts\Hello.cs" />
+    <Compile Include="Assets\Scripts\ModalObjetos.cs" />
     <Compile Include="Assets\Scripts\JogoMemoria.cs" />
   </ItemGroup>
   <ItemGroup>

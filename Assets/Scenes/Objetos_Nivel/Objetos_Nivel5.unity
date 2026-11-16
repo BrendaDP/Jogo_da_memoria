@@ -507,7 +507,7 @@ Transform:
   m_GameObject: {fileID: 159336698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: -19.179, z: -10}
+  m_LocalPosition: {x: 150, y: -23, z: -10}
   m_LocalScale: {x: 0.72498, y: 0.68749, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -845,6 +845,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 7102572}
   imagemInterrogacao: {fileID: 2057896884}
   nomeAnimal: {fileID: 1995255437}
+  comecarViradaParaCima: 0
 --- !u!1 &271916032
 GameObject:
   m_ObjectHideFlags: 1
@@ -1594,6 +1595,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1141029841}
   imagemInterrogacao: {fileID: 693101015}
   nomeAnimal: {fileID: 1486224253}
+  comecarViradaParaCima: 0
 --- !u!114 &523900009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1976,6 +1978,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 2075882662}
   imagemInterrogacao: {fileID: 2105401298}
   nomeAnimal: {fileID: 880828995}
+  comecarViradaParaCima: 0
 --- !u!1 &589044846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2111,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1606525816}
   imagemInterrogacao: {fileID: 1234114703}
   nomeAnimal: {fileID: 2106072542}
+  comecarViradaParaCima: 0
 --- !u!114 &625803422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2409,6 +2413,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 105474607}
   imagemInterrogacao: {fileID: 822491668}
   nomeAnimal: {fileID: 1798185604}
+  comecarViradaParaCima: 0
 --- !u!114 &802749438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3157,6 +3162,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1878901534}
   imagemInterrogacao: {fileID: 807973095}
   nomeAnimal: {fileID: 184299658}
+  comecarViradaParaCima: 0
 --- !u!1 &976452792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,6 +3439,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 401074328}
   imagemInterrogacao: {fileID: 1543002561}
   nomeAnimal: {fileID: 838068187}
+  comecarViradaParaCima: 0
 --- !u!114 &1012596789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3584,6 +3591,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 2014085368}
   imagemInterrogacao: {fileID: 1463239396}
   nomeAnimal: {fileID: 318853755}
+  comecarViradaParaCima: 0
 --- !u!114 &1092549566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3904,6 +3912,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 340111192}
   imagemInterrogacao: {fileID: 733106260}
   nomeAnimal: {fileID: 2040907181}
+  comecarViradaParaCima: 0
 --- !u!1 &1201853103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,6 +3970,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 976452792}
   imagemInterrogacao: {fileID: 589044846}
   nomeAnimal: {fileID: 305718609}
+  comecarViradaParaCima: 0
 --- !u!114 &1201853106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,6 +5154,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1513547671}
   imagemInterrogacao: {fileID: 1622861898}
   nomeAnimal: {fileID: 1680637820}
+  comecarViradaParaCima: 0
 --- !u!114 &1828603851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6044,7 +6055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 365, y: 221}
+  m_AnchoredPosition: {x: 573, y: 414}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060022862
@@ -6564,6 +6575,7 @@ MonoBehaviour:
   imagemBicho: {fileID: 1870246495}
   imagemInterrogacao: {fileID: 1759498471}
   nomeAnimal: {fileID: 565476747}
+  comecarViradaParaCima: 0
 --- !u!114 &2144497565
 MonoBehaviour:
   m_ObjectHideFlags: 0
