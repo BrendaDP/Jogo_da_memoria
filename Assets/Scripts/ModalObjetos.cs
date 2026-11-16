@@ -13,6 +13,8 @@ public class ModalObjetos : MonoBehaviour
 
     public Sprite relogio;
     public Sprite caneta;
+    public Sprite chave;
+    public Sprite chapeu;
     public Sprite livro;
     public Sprite cadeira;
 
@@ -37,6 +39,24 @@ public class ModalObjetos : MonoBehaviour
             "CANETA",
             "A CANETA É UM OBJETO QUE USAMOS PARA ESCREVER E DESENHAR! ELA POSSUI TINTA E PODE TER VÁRIAS CORES, COMO AZUL, PRETA, VERMELHA E VERDE.",
             caneta
+        );
+    }
+
+    public void AbrirChave()
+    {
+        AbrirModal(
+            "CHAVE",
+            "A CHAVE É UM OBJETO QUE USAMOS PARA ABRIR E FECHAR PORTAS E CADEADOS! ELA GERALMENTE É FEITA DE METAL E EXISTE EM DIFERENTES FORMATOS E TAMANHOS.",
+            chave
+        );
+    }
+
+    public void AbrirChapeu()
+    {
+        AbrirModal(
+            "CHAPÉU",
+            "O CHAPÉU É UM ACESSÓRIO QUE USAMOS NA CABEÇA! ELE PODE AJUDAR A PROTEGER DO SOL E TAMBÉM FAZ PARTE DE DIFERENTES ESTILOS DE ROUPAS.",
+            chapeu
         );
     }
 

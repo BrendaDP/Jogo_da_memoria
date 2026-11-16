@@ -1144,7 +1144,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 986166331}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
         m_MethodName: AbrirMamao
         m_Mode: 1
@@ -1734,7 +1734,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 986166331}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
         m_MethodName: AbrirUva
         m_Mode: 1
@@ -2191,7 +2191,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 986166331}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
         m_MethodName: AbrirMelancia
         m_Mode: 1
@@ -2339,7 +2339,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 986166331}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
         m_MethodName: AbrirBanana
         m_Mode: 1
@@ -2539,19 +2539,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 986166325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc37886c5b93e02438f37f22b25eb7d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5422a4bde3ff55b488dc42c4682a7e8a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ModalFrutas
+  m_EditorClassIdentifier: Assembly-CSharp::ModalObjetos
   painelModal: {fileID: 577657152}
-  imagemFruta: {fileID: 295470872}
-  nomeFruta: {fileID: 284337319}
-  descricaoFruta: {fileID: 395941246}
-  maca: {fileID: 7549672006538830878, guid: 2898484d47a830f4080fd31d903c9b16, type: 3}
-  banana: {fileID: -9182177788924653191, guid: 8d1510712c9c54848825407753920c2d, type: 3}
-  laranja: {fileID: 6850016042506405862, guid: 65f403113971ead418322920d52a11ef, type: 3}
-  mamao: {fileID: -4907901927027416362, guid: 36d48e41df067bf43b3e24141d312b04, type: 3}
-  uva: {fileID: 3539229634404517914, guid: ca1055224bc24f7408479f1301f8ff51, type: 3}
-  melancia: {fileID: -4343972821450535638, guid: 1b9e96ce79542404c8a777dace7cba4c, type: 3}
+  imagemObjeto: {fileID: 295470872}
+  nomeObjeto: {fileID: 284337319}
+  descricaoObjeto: {fileID: 395941246}
+  relogio: {fileID: 5662783821573247211, guid: 0df69262665c5bd4cae4e601332f0cdb, type: 3}
+  caneta: {fileID: -4319898219758209541, guid: c2fcb9621e1e62241b380e3be15dfd45, type: 3}
+  chave: {fileID: -7197342936065130992, guid: bf9b81e2432d47e459027370d663a816, type: 3}
+  chapeu: {fileID: 7954214025862396890, guid: 35a8db6dae686314ab27a6d277725e1b, type: 3}
+  livro: {fileID: -181322506959248185, guid: b8ba80ee2e20c5948b70cd05fb294bd3, type: 3}
+  cadeira: {fileID: 4900948279032809306, guid: 4a41376b07718194da1c47efd84bdc09, type: 3}
 --- !u!1 &1052640330
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,8 +3325,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 986166331}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirMaca
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirRelogio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3337,8 +3337,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 986166331}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirMaca
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirRelogio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3591,7 +3591,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 986166331}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
         m_MethodName: AbrirLaranja
         m_Mode: 1
