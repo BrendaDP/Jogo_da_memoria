@@ -1390,6 +1390,7 @@ GameObject:
   - component: {fileID: 711467446}
   - component: {fileID: 711467445}
   - component: {fileID: 711467444}
+  - component: {fileID: 711467448}
   m_Layer: 5
   m_Name: Button_9
   m_TagString: Untagged
@@ -1503,6 +1504,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 711467448}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &711467446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,6 +1554,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711467442}
   m_CullTransparentMesh: 1
+--- !u!114 &711467448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711467442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: c9d6c78ee01b75d4e9350f0ae4535858, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &733106260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2020,7 @@ GameObject:
   - component: {fileID: 899646802}
   - component: {fileID: 899646801}
   - component: {fileID: 899646804}
+  - component: {fileID: 899646805}
   m_Layer: 5
   m_Name: Button_4
   m_TagString: Untagged
@@ -2090,6 +2118,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 899646805}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &899646802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2144,6 +2184,20 @@ MonoBehaviour:
   imagemInterrogacao: {fileID: 807973095}
   nomeAnimal: {fileID: 184299658}
   comecarViradaParaCima: 1
+--- !u!114 &899646805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899646799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 2f3dc7eb03861f44e8a47b2e0245113c, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &980917585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,6 +2420,7 @@ MonoBehaviour:
   coelho: {fileID: 4923657074727427020, guid: a4e12a6d893c8934b9540c3c953c5d08, type: 3}
   gaviao: {fileID: -1227877770032798812, guid: fdb20c1ee94cc4c4a8205b0d115cee3b, type: 3}
   peixe: {fileID: -8346667246893509311, guid: 7829272548603884c824c76988dd1931, type: 3}
+  somAbrirModal: {fileID: 0}
 --- !u!1 &1130747989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,6 +2836,8 @@ GameObject:
   - component: {fileID: 1193922355}
   - component: {fileID: 1193922354}
   - component: {fileID: 1193922357}
+  - component: {fileID: 1193922359}
+  - component: {fileID: 1193922360}
   m_Layer: 5
   m_Name: Button_1
   m_TagString: Untagged
@@ -2890,6 +2947,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1193922359}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1193922355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2944,6 +3013,117 @@ MonoBehaviour:
   imagemInterrogacao: {fileID: 733106260}
   nomeAnimal: {fileID: 2040907181}
   comecarViradaParaCima: 1
+--- !u!114 &1193922359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193922352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 89e3785fab7d0e8438001ac68832c5c4, type: 3}
+  audioSource: {fileID: 0}
+--- !u!82 &1193922360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193922352}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1243549035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +3137,7 @@ GameObject:
   - component: {fileID: 1243549039}
   - component: {fileID: 1243549038}
   - component: {fileID: 1243549037}
+  - component: {fileID: 1243549041}
   m_Layer: 5
   m_Name: Button_3
   m_TagString: Untagged
@@ -3070,6 +3251,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1243549041}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1243549039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,6 +3301,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243549035}
   m_CullTransparentMesh: 1
+--- !u!114 &1243549041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243549035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 62361f6fa88f23f429da4533c86647a9, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1277611612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,6 +3804,7 @@ GameObject:
   - component: {fileID: 1547903821}
   - component: {fileID: 1547903820}
   - component: {fileID: 1547903819}
+  - component: {fileID: 1547903823}
   m_Layer: 5
   m_Name: Button_6
   m_TagString: Untagged
@@ -3710,6 +3918,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1547903823}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1547903821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3748,6 +3968,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547903817}
   m_CullTransparentMesh: 1
+--- !u!114 &1547903823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547903817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: fefcb8d7a3b77304b971280776d6eabc, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1586077334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,6 +4707,7 @@ GameObject:
   - component: {fileID: 2114289870}
   - component: {fileID: 2114289869}
   - component: {fileID: 2114289868}
+  - component: {fileID: 2114289872}
   m_Layer: 5
   m_Name: Button_11
   m_TagString: Untagged
@@ -4586,6 +4821,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2114289872}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2114289870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4624,6 +4871,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114289866}
   m_CullTransparentMesh: 1
+--- !u!114 &2114289872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114289866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 960fd8c422c74134bb1b7d76dde4c6ce, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

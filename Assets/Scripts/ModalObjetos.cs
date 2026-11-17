@@ -18,6 +18,8 @@ public class ModalObjetos : MonoBehaviour
     public Sprite livro;
     public Sprite cadeira;
 
+    public AudioClip somAbrirModal;
+
     private void Start()
     {
         // O modal começa fechado
@@ -89,6 +91,11 @@ public class ModalObjetos : MonoBehaviour
         imagemObjeto.sprite = imagem;
 
         painelModal.SetActive(true);
+
+        if (GerenciadorAudio.instancia != null)
+        {
+            GerenciadorAudio.instancia.TocarEfeito(somAbrirModal);
+        }
     }
 
     public void FecharModal()

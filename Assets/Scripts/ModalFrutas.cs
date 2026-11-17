@@ -18,6 +18,8 @@ public class ModalFrutas : MonoBehaviour
     public Sprite uva;
     public Sprite melancia;
 
+    public AudioClip somAbrirModal;
+
     private void Start()
     {
         // O modal começa fechado
@@ -89,6 +91,11 @@ public class ModalFrutas : MonoBehaviour
         imagemFruta.sprite = imagem;
 
         painelModal.SetActive(true);
+
+        if (GerenciadorAudio.instancia != null)
+        {
+            GerenciadorAudio.instancia.TocarEfeito(somAbrirModal);
+        }
     }
 
     public void FecharModal()
