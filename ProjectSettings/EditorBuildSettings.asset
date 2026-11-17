@@ -114,6 +114,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel1.unity
     guid: 48bb1d123308d214faed09699cc57cb0
   - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel2.unity
+    guid: 0ed188a20893b654396390efa4080bde
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel3.unity
+    guid: d3e4b6c75a0dcff47bff52a3c0c0b5d0
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel4.unity
+    guid: 49d010cf06a4b614ea32b04a7daa94d3
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel5.unity
+    guid: 2abf17cad34e92c428ba7a21eac88af6
+  - enabled: 1
     path: Assets/Scenes/Animais_Nivel/InfoFinal.unity
     guid: df200ef9ffe767442a1ffe68e251b402
   - enabled: 1
@@ -125,6 +137,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/InfoFinal4.unity
     guid: ad2fc650d26a8fd47be40aa0e641c11d
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos.unity
+    guid: 649bc0ee25fb8114a948f47368d120d1
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos1.unity
+    guid: 30c2061b949276e4382e9201ede62081
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos2.unity
+    guid: 28c8207e75091ab4ab5121dc37a7d6ee
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos3.unity
+    guid: 3286d055205df3d4cab1a8db3d84bc8a
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos4.unity
+    guid: 8564bc01073fe534e8d781c36f9b02e4
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/Parabens_Info.unity
     guid: b674fe73ba32dd344a14047f65b68570

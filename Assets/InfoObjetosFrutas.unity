@@ -1144,9 +1144,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirMamao
+      - m_Target: {fileID: 986166331}
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirChapeu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1734,9 +1734,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirUva
+      - m_Target: {fileID: 986166331}
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirLivro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2191,9 +2191,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirMelancia
+      - m_Target: {fileID: 986166331}
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirCadeira
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2339,9 +2339,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirBanana
+      - m_Target: {fileID: 986166331}
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirCaneta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3050,7 +3050,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: InfoFinalFrutas
+          m_StringArgument: InfoFinalObjetos
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1160695275
@@ -3591,9 +3591,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ModalFrutas, Assembly-CSharp
-        m_MethodName: AbrirLaranja
+      - m_Target: {fileID: 986166331}
+        m_TargetAssemblyTypeName: ModalObjetos, Assembly-CSharp
+        m_MethodName: AbrirChave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

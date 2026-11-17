@@ -41,7 +41,7 @@ public class JogoMemoria : MonoBehaviour
         string cenaAtual = SceneManager.GetActiveScene().name;
 
         // Identifica as cenas de informações.
-        bool cenaDeInformacoes = cenaAtual.StartsWith("InfoFinal");
+        bool cenaDeInformacoes = cenaAtual.StartsWith("Info");
 
         // Limpa o resultado anterior apenas nas fases do jogo.
         if (!cenaDeInformacoes)
