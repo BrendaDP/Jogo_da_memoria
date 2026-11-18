@@ -115,7 +115,7 @@ public class JogoMemoria : MonoBehaviour
         {
             if (temporizador != null)
             {
-                temporizador.text = "TEMPO 00:00";
+                temporizador.text = "Tempo: 00:00";
             }
 
             return;
@@ -130,7 +130,7 @@ public class JogoMemoria : MonoBehaviour
         int segundos = Mathf.FloorToInt(tempo % 60f);
 
         temporizador.text = string.Format(
-            "TEMPO {0:00}:{1:00}",
+            "Tempo: {0:00}:{1:00}",
             minutos,
             segundos
         );
@@ -208,7 +208,7 @@ public class JogoMemoria : MonoBehaviour
 
     private static IEnumerator SumirPar()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.8f);
 
         if (primeiraCarta != null)
             primeiraCarta.gameObject.SetActive(false);
@@ -231,7 +231,7 @@ public class JogoMemoria : MonoBehaviour
 
     private static IEnumerator DesvirarCartas()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.8f);
 
         if (primeiraCarta != null)
             primeiraCarta.Desvirar();
