@@ -1276,6 +1276,7 @@ GameObject:
   - component: {fileID: 899646802}
   - component: {fileID: 899646801}
   - component: {fileID: 899646804}
+  - component: {fileID: 899646805}
   m_Layer: 5
   m_Name: Button_4
   m_TagString: Untagged
@@ -1373,6 +1374,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 899646805}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &899646802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,6 +1440,20 @@ MonoBehaviour:
   imagemInterrogacao: {fileID: 807973095}
   nomeAnimal: {fileID: 184299658}
   comecarViradaParaCima: 1
+--- !u!114 &899646805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899646799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 3350d92e080f3f942882ae6c53ffdafb, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &986166325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1597,7 @@ MonoBehaviour:
   mamao: {fileID: -4907901927027416362, guid: 36d48e41df067bf43b3e24141d312b04, type: 3}
   uva: {fileID: 3539229634404517914, guid: ca1055224bc24f7408479f1301f8ff51, type: 3}
   melancia: {fileID: -4343972821450535638, guid: 1b9e96ce79542404c8a777dace7cba4c, type: 3}
+  somAbrirModal: {fileID: 0}
 --- !u!1 &1130747989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +1876,7 @@ GameObject:
   - component: {fileID: 1193922355}
   - component: {fileID: 1193922354}
   - component: {fileID: 1193922357}
+  - component: {fileID: 1193922358}
   m_Layer: 5
   m_Name: Button_1
   m_TagString: Untagged
@@ -1957,6 +1986,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1193922358}
+        m_TargetAssemblyTypeName: ButtonVoicePlayer, Assembly-CSharp
+        m_MethodName: TocarVoz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1193922355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,6 +2052,20 @@ MonoBehaviour:
   imagemInterrogacao: {fileID: 733106260}
   nomeAnimal: {fileID: 2040907181}
   comecarViradaParaCima: 1
+--- !u!114 &1193922358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193922352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a9e049741e9a47a6b244e7b9c0825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonVoicePlayer
+  audioVoiceClip: {fileID: 8300000, guid: 24472aca9616673499c17cc557307603, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1464054760
 GameObject:
   m_ObjectHideFlags: 0
