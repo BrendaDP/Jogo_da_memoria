@@ -93,6 +93,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel4.unity
     guid: 20ccb3d51cfafcc46b031295890375e2
   - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel5.unity
+    guid: 15033426e2b1a1f459dc29042a6accba
+  - enabled: 1
     path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas1.unity
     guid: 5c91c27022a43e4478ca4265b6de893a
   - enabled: 1
@@ -107,9 +110,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Frutas_Nivel/InfoFinalFrutas.unity
     guid: a4a33553134698c4e82627efe515febb
-  - enabled: 1
-    path: Assets/Scenes/Frutas_Nivel/Frutas_Nivel5.unity
-    guid: 15033426e2b1a1f459dc29042a6accba
   - enabled: 1
     path: Assets/Scenes/Objetos_Nivel/Objetos_Nivel1.unity
     guid: 48bb1d123308d214faed09699cc57cb0
@@ -130,7 +130,7 @@ EditorBuildSettings:
     guid: df200ef9ffe767442a1ffe68e251b402
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/InfoFinal2.unity
-    guid: e78e3099c1117fa41ba4fd3b96a02f4e
+    guid: bc69d664c4e2d374fb0e960c7b02a7d2
   - enabled: 1
     path: Assets/Scenes/Animais_Nivel/InfoFinal3.unity
     guid: 23f0bd453b5f3fb4fb77fb559b89a236
@@ -153,8 +153,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Objetos_Nivel/InfoFinalObjetos4.unity
     guid: 8564bc01073fe534e8d781c36f9b02e4
   - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Parabens_Objetos1.unity
+    guid: 1fe97c50260c6be4ca068fa37734cf9a
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Parabens_Objetos2.unity
+    guid: aae7808d0ab1ed34584b02df3ebb85b3
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Parabens_Objetos3.unity
+    guid: ecb09d9e7c22cd84cb51e73db28c5951
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Parabens_Objetos4.unity
+    guid: c513b37fb20d9664c9dd4fa5a83a3886
+  - enabled: 1
+    path: Assets/Scenes/Objetos_Nivel/Parabens_ObjetosFinal.unity
+    guid: d0f4a782a0f1fc44f8a39caffb89e1ab
+  - enabled: 1
     path: Assets/Scenes/Animais_Nivel/Parabens_Info.unity
     guid: b674fe73ba32dd344a14047f65b68570
+  - enabled: 1
+    path: Assets/Scenes/Frutas_Nivel/Parabens_FrutasFinal.unity
+    guid: 00cfb8d8def77a4439a2a21b686813a7
   - enabled: 1
     path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas1.unity
     guid: cd787b591d794e146ac28ba699e0de4b

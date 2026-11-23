@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 159336698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: -19.179, z: -10}
+  m_LocalPosition: {x: 41.6, y: -20.1, z: -10}
   m_LocalScale: {x: 0.72498, y: 0.68749, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1068,7 +1068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108, y: -60.9826}
+  m_AnchoredPosition: {x: 306, y: -57}
   m_SizeDelta: {x: 270.239, y: 351.3744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484310290
@@ -1839,7 +1839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: -63.36764}
+  m_AnchoredPosition: {x: -108, y: -61}
   m_SizeDelta: {x: 270.239, y: 351.3744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899646801
@@ -2227,7 +2227,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Parabens_Animal4
+          m_StringArgument: Parabens_Frutas3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1130747992
@@ -2360,7 +2360,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: InfoFinalFrutas
+          m_StringArgument: InfoFinalFrutas3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1160695275
@@ -2779,7 +2779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -101.68003, y: -60.982597}
+  m_AnchoredPosition: {x: 107, y: -59}
   m_SizeDelta: {x: 270.239, y: 351.3744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1243549037

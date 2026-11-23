@@ -24,27 +24,71 @@ public class Parabens : MonoBehaviour
         string cenaNivel = "";
 
         switch (cenaParabens)
-        {
-            case "Parabens_Animal1":
-                cenaNivel = "Animais_Nivel1";
-                break;
+{
+    // ANIMAIS
+    case "Parabens_Animal1":
+        cenaNivel = "Animais_Nivel1";
+        break;
 
-            case "Parabens_Animal2":
-                cenaNivel = "Animais_Nivel2";
-                break;
+    case "Parabens_Animal2":
+        cenaNivel = "Animais_Nivel2";
+        break;
 
-            case "Parabens_Animal3":
-                cenaNivel = "Animais_Nivel3";
-                break;
+    case "Parabens_Animal3":
+        cenaNivel = "Animais_Nivel3";
+        break;
 
-            case "Parabens_Animal4":
-                cenaNivel = "Animais_Nivel4";
-                break;
+    case "Parabens_Animal4":
+        cenaNivel = "Animais_Nivel4";
+        break;
 
-            case "Parabens_Animal5":
-                cenaNivel = "Animais_Nivel5";
-                break;
-        }
+    case "Parabens_Animal5":
+        cenaNivel = "Animais_Nivel5";
+        break;
+
+    // FRUTAS
+    case "Parabens_Frutas1":
+        cenaNivel = "Frutas_Nivel1";
+        break;
+
+    case "Parabens_Frutas2":
+        cenaNivel = "Frutas_Nivel2";
+        break;
+
+    case "Parabens_Frutas3":
+        cenaNivel = "Frutas_Nivel3";
+        break;
+
+    case "Parabens_Frutas4":
+        cenaNivel = "Frutas_Nivel4";
+        break;
+    
+       case "Parabens_FrutasFinal":
+        cenaNivel = "Frutas_Nivel5";
+        break;
+    
+    // OBJETOS
+    case "Parabens_Objetos1":
+        cenaNivel = "Objetos_Nivel1";
+        break;
+
+    case "Parabens_Objetos2":
+        cenaNivel = "Objetos_Nivel2";
+        break;
+
+    case "Parabens_Objetos3":
+        cenaNivel = "Objetos_Nivel3";
+        break;
+
+    case "Parabens_Objetos4":
+        cenaNivel = "Objetos_Nivel4";
+        break;
+
+    case "Parabens_ObjetosFinal":
+        cenaNivel = "Objetos_Nivel5";
+        break;
+        
+}
 
         if (string.IsNullOrEmpty(cenaNivel))
         {

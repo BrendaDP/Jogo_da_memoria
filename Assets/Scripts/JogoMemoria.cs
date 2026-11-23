@@ -346,6 +346,10 @@ public class JogoMemoria : MonoBehaviour
             case "Frutas_Nivel4":
                 cenaParabens = "Parabens_Frutas4";
                 break;
+
+            case "Frutas_Nivel5":
+                cenaParabens = "Parabens_FrutasFinal";
+                break;
         }
 
         if (cenaParabens != "")

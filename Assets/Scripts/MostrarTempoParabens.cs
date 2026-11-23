@@ -33,6 +33,48 @@ public class MostrarTempoParabens : MonoBehaviour
             case "Parabens_Info":
                 nomeNivel = "Animais_Nivel5";
                 break;
+
+            // FRUTAS
+            case "Parabens_Frutas1":
+                nomeNivel = "Frutas_Nivel1";
+                break;
+
+            case "Parabens_Frutas2":
+                nomeNivel = "Frutas_Nivel2";
+                break;
+
+            case "Parabens_Frutas3":
+                nomeNivel = "Frutas_Nivel3";
+                break;
+
+            case "Parabens_Frutas4":
+                nomeNivel = "Frutas_Nivel4";
+                break;
+
+            case "Parabens_FrutasFinal":
+                nomeNivel = "Frutas_Nivel5";
+                break;
+
+            // OBJETOS
+            case "Parabens_Objetos1":
+                nomeNivel = "Objetos_Nivel1";
+                break;
+
+            case "Parabens_Objetos2":
+                nomeNivel = "Objetos_Nivel2";
+                break;
+
+            case "Parabens_Objetos3":
+                nomeNivel = "Objetos_Nivel3";
+                break;
+
+            case "Parabens_Objetos4":
+                nomeNivel = "Objetos_Nivel4";
+                break;
+
+            case "Parabens_ObjetosFinal":
+                nomeNivel = "Objetos_Nivel5";
+                break;
         }
 
         if (nomeNivel == "")
