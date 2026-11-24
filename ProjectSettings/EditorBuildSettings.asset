@@ -188,6 +188,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Frutas_Nivel/Parabens_Frutas_Info.unity
     guid: b1f488c6c58692743b813c759d958453
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: aef3fc04c4218bb46aa7713a4e1b24a3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
